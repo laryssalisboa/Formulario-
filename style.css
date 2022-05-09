@@ -12,6 +12,11 @@ div{
     color: white;
 }
 
+.g-recaptcha {
+    display: flex;
+    justify-content: center;
+  }
+
 .error{
     background-color: darkred; 
     color: whitesmoke;
