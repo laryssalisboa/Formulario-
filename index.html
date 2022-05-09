@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="main.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+   
+</head>
+<body>
+    <h1>Cadastre-se para receber os próximos lançamentos literários</h1>
+
+    <section class="container">
+        <form id="form">
+            <div class="msg-error"></div>
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" size="30" placeholder="Digite seu primeiro nome">
+            </div>
+
+            <div>
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" size="30" placeholder="Ex: exemplo@exemplo.com">
+            </div>
+
+            <div class="g-recaptcha" data-sitekey="6LfE7tgfAAAAAP8KIRR0gmpQNqQ_EdYnj4Q3k4j8"></div><br>
+
+            <input type="submit" class="btn" value="Confirmar cadastro" id="submit-button">
+
+        </form>
+
+    </section>
+
+    <ul class="nomeEmail"> </ul>
+    
+</body>
+</html>
