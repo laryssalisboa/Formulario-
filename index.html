@@ -28,9 +28,18 @@
 
             <div class="g-recaptcha" data-sitekey="6LfE7tgfAAAAAP8KIRR0gmpQNqQ_EdYnj4Q3k4j8"></div><br>
 
-            <input type="submit" class="btn" value="Confirmar cadastro" id="submit-button">
+            <input type="submit" class="btn" value="Confirmar cadastro" id="submit-button" onclick="return valida()">
 
         </form>
+        
+        <script>
+      function valida() {
+      if (grecaptcha.getResponse() == "") {
+      alert("Você precisa marcar a caixa de validação");
+      return false;
+      }
+      }
+</script>
 
     </section>
 
